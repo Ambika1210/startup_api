@@ -3,11 +3,11 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const config = {
-  PORT: process.env.PORT || 3002, // Changed port to avoid conflict with institute_api (3001)
+  PORT: process.env.PORT || 3002, 
   STAGE: process.env.STAGE || 'development',
   JWT_SECRET: process.env.JWT_SECRET || 'default-secret',
   JWT_EXPIRES_IN: process.env.JWT_EXPIRES_IN || '7d',
-  MONGO_URL: process.env.MONGO_URL || 'mongodb+srv://rajukumar957259_db_user:rajukumarAtlasUser%23321@champaran-food-service.dfianrw.mongodb.net/plusdotDB', // Changed DB name to plusdotDB
+  MONGO_URL: process.env.MONGO_URL ,
   LOG_MAX_FILES: process.env.LOG_MAX_FILES || '14d',
   JWT_STAGING_EXPIRES_IN: process.env.JWT_STAGING_EXPIRES_IN || '30d',
   S3: {
